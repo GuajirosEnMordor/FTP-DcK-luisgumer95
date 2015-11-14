@@ -16,7 +16,7 @@ public class FTPServer {
             ss = new ServerSocket(9000);
             s = ss.accept();
             is = s.getInputStream();
-            os = new FileOutputStream("D:\\Programacion\\Proyectos SourceTree\\FTP Dck Gumer95\\FTP Files Server\\KeptyouwaitingIMG");
+            os = new FileOutputStream("D:\\Programacion\\Proyectos SourceTree\\FTP Dck Gumer95\\FTP Files Server\\KUW.png");
 
             byte[] bytes = new byte[100000];
             while ((count = is.read(bytes)) > 0) {
@@ -25,10 +25,7 @@ public class FTPServer {
 
             }
 
-            os.close();
-            s.close();
-            is.close();
-            ss.close();
+            os.close(); s.close(); is.close(); ss.close();
 
         } catch (Exception e) {
 

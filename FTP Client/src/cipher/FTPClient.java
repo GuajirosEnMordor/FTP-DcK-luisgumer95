@@ -11,9 +11,9 @@ public class FTPClient {
 
         try{
             s=new Socket("localhost",9000);
-            File f=new File("D:\\Programacion\\Proyectos SourceTree\\FTP Dck Gumer95\\FTP Files Client");
+            File f=new File("D:\\Programacion\\Proyectos SourceTree\\FTP Dck Gumer95\\FTP Files Client\\KUW.png");
 
-            byte[] bytes=new byte[38900];
+            byte[] bytes=new byte[100000];
             InputStream is=new FileInputStream(f);
             OutputStream os=s.getOutputStream();
 
